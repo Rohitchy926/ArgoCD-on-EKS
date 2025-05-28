@@ -32,7 +32,6 @@ sudo mv eksctl /usr/local/bin/
 
 eksctl version
 ```
-
 ## Step 3: AWS Configure - 
         ○ Access Key - Your_Access_Key
         ○ Access Secret Key - Your Access_secret_key
@@ -66,7 +65,8 @@ kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.pas
 ## Step 6: Deploy an App on ArgoCD
 Deploy your first application using ```deployment.yaml```.
 
-## Step 7: Delete EKS CLuster 
-```
-eksctl delete cluster --name sen-devops --region ap-south-1
-```
+## Step 7: Once after deploying ArgoCD 
+open with - Username - admin
+             pass- that you have created with (kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
+
+##step 8: 
