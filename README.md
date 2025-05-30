@@ -74,4 +74,10 @@ Deploy your first application using ```deployment.yaml```.
 open with - Username - admin
              pass- that you have created with (kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
 
-##step 8: 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/ac9b354d-561e-4145-a72a-95ccec6bbe35" />
+
+
+## step 8: Created an ArgoCD Application resource that points to a Git repository with the NGINX manifests.
+
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/257a70b8-e287-41f8-9fd6-faba41fac7e1" />
+
