@@ -39,16 +39,16 @@ eksctl version
 ## Step 4: Create EKS Cluster -
 - Create Cluster:
 ```
-eksctl create cluster --name sen-devops --region ap-south-1 --node-type t2.medium --nodes-min 1 --nodes-max 2
+eksctl create cluster --name test-server --us-east-1 --node-type t2.medium --nodes-min 1 --nodes-max 2
 ```
 
 - Get Eks Cluster:
 ```
-eksctl get cluster --name sen-devops --region ap-south-1
+eksctl get cluster --name test-server --region us-east-1
 ```
 - Update Kubeconfig file for  kubectl:
 ```
-aws eks update-kubeconfig --name sen-devops --region ap-south-1
+aws eks update-kubeconfig --name test-server --region us-east-1
 ```
 ## Step 5: Install ArgoCD
 ```
