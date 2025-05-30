@@ -58,6 +58,11 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 ```
+
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/db9cb295-a999-4bc1-bb51-9559ac594e0e" />
+
+
+
 - Retrieve the initial admin password for ArgoCD:
 ```
 kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
